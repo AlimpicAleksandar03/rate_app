@@ -32,8 +32,8 @@ const Text = ({ color, fontSize, fontWeight, style, ...props }) => {
     fontSize === "subheading" && styles.fontSizeSubheading,
     fontWeight === "bold" && styles.fontWeightBold,
     style,
-    Platform.OS === "ios" && { fontFamily: "Roboto" },
-    Platform.OS === "android" && { fontFamily: "Arial" },
+    // Platform.OS === "ios" && { fontFamily: "Roboto" },
+    // Platform.OS === "android" && { fontFamily: "Arial" },
   ];
 
   return <NativeText style={textStyle} {...props} />;
